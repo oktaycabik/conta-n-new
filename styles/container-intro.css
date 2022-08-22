@@ -1,0 +1,25 @@
+.intro-info{
+    line-height: 30px;
+    padding-top: 20px;
+}
+.container-intro{
+    text-align: center;
+}
+.intro-head{
+    font-weight: 700;
+}
+.intro-main{
+  align-items: center;
+    display: flex; 
+    flex-direction: column;
+}
+.intro-img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+    line-height: 28px;
+   
+}

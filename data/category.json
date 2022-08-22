@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "category": "Cafe Container",
+    "slug": "cafe-container",
+    "image": "/assets/img/FrontPage/BuroMainpageUpdate.webp"
+  },
+  {
+    "id": "2",
+    "category": "Sanitärcontainer",
+    "slug": "sanitarcontainer",
+    "image": "/assets/img/FrontPage/SanitaMainpageUpdate.webp"
+  },
+  {
+    "id": "3",
+    "category": "Bürocontainer",
+    "slug": "burocontainer",
+    "image": "/assets/img/FrontPage/BuroMainpageUpdate.webp"
+  },
+  {
+    "id": "4",
+    "category": "Wohncontainer",
+    "slug": "wohncontainer",
+    "image": "/assets/img/FrontPage/XLMainpageUpdate.webp"
+  },
+
+  {
+    "id": "5",
+    "category": "Flatpack",
+    "slug": "flatpack",
+    "image": "/assets/img/FrontPage/FlatpackMainPage.webp"
+  }
+]
