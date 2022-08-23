@@ -5,7 +5,7 @@ const ContainerIntro = () => {
     <>
       <div className="container ">
         <div className="row justify-content-center">
-          <section className="col-8  text-center ofset-4 mt-5">
+          <section className="col-lg-8 col-12  text-center ofset-4 mt-5">
             <h1 className="intro-head">
               Conliving Container und mobile Raumsysteme
             </h1>
@@ -22,14 +22,14 @@ const ContainerIntro = () => {
 
         <section>
           <div className="row justify-content-center mt-4 mb-5">
-            <div className="col-5 ">
+            <div className="col-lg-5 col-12 ">
               <img
                 className="intro-img"
                 src="https://cdn-djgbe.nitrocdn.com/aexqLNkCYpLucHGfDgNbHjSJwfoJxIwc/assets/static/optimized/rev-8ec7905/wp-content/themes/conliving-theme-2-2/assets/images/1x1-conliving-w6-schnelleunterkunft.jpg"
                 alt=""
               />
             </div>
-            <div className="col-6 p-4 mt-3">
+            <div className="col-lg-6 col-12 p-4 mt-3">
               <h3 className="text-center">
                 {" "}
                 <b>
