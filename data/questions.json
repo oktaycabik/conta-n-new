@@ -1,0 +1,50 @@
+[
+    {
+        "ïd":1,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample1",
+        "aria":"multiCollapseExample1",
+        "data":"multiCollapseExample1"
+    },
+    {
+        "ïd":2,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample2",
+        "aria":"multiCollapseExample2",
+        "data":"multiCollapseExample2"
+    },
+    {
+        "ïd":3,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample3",
+        "aria":"multiCollapseExample3",
+        "data":"multiCollapseExample3"
+    },
+    {
+        "ïd":4,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample4",
+        "aria":"multiCollapseExample4",
+        "data":"multiCollapseExample4"
+    },
+    {
+        "ïd":5,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample5",
+        "aria":"multiCollapseExample5",
+        "data":"multiCollapseExample5"
+    },
+    {
+        "ïd":6,
+        "question":"Lorem Ipsum",
+        "answer":"Lorem Ipsum Dolar sit Amet.",
+        "href":"#multiCollapseExample6",
+        "aria":"multiCollapseExample6",
+        "data":"multiCollapseExample6"
+    }
+]

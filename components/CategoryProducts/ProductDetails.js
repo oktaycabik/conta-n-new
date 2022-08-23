@@ -20,7 +20,7 @@ const ProductDetails = ({ pro }) => {
           <b className="mt-3">Kaufpreis</b>
           <div className="d-flex justify-content-between mb-4">
           <div  className="mt-2">{pro.content.price}</div>
-          <Link href={pro.slug}>
+          <Link href={`/container/${pro.slug}`}>
           <button className="button-dark">Produkt Zum</button>
           </Link>
           </div>
