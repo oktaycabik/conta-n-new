@@ -5,6 +5,14 @@ import Link from "next/link"
 const Categories = () => {
   return (
     <section className="container">
+      <div className="row ps-5 pe-5 justify-content-center">
+        <div className="col-lg-8 col-12">
+        <h2 className="text-center"> <b>Übersicht</b>  unserer Container Raumlösungen</h2>
+        <h4 className="text-center mt-2 ">Egal, ob Sie kurzfristig neue Räumlichkeiten benötigen oder die Auslagerung Ihres Geschäfts planen
+Conliving ist der Ideale Partner bei der Umsetzung Ihrer Wünsche und Ziele.</h4>
+        </div>
+        
+         </div>
       <div className="row ps-5 pe-5">
         {categories.map((category) => (
             <Link key={category.id} href={category.slug}>
