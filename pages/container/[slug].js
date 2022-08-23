@@ -1,5 +1,7 @@
 import React from 'react'
 import ImportantQuestions from '../../components/ImportantQuestions'
+import TechnicalDetails from '../../components/ProductPage/ TechnicalDetails'
+import Description from '../../components/ProductPage/Description'
 import SmilarProducts from '../../components/SmilarProducts'
 import products from "../../data/products.json"
 const Container = ({product}) => {
@@ -26,10 +28,14 @@ const Container = ({product}) => {
    <img height={470} className="w-100" src={product.image.ima1}></img>
    </div>
   </div>
-  <SmilarProducts product={product}/> 
+  
 
     </div>
+    <Description/>
+    <TechnicalDetails product={product}/>
+    <SmilarProducts product={product}/> 
       <ImportantQuestions/>
+
       </>
   )
 }

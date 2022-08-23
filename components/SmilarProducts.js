@@ -18,7 +18,7 @@ const SmilarProducts = ({ product }) => {
   return (
     <div className="container mt-5 mb-4 ">
       <div className="pe-5 ps-5 ">
-      <h3 className="text-center">Ähnliche Produkte</h3>
+      <h3 className="text-center pb-1">Ähnliche Produkte</h3>
         <Splide
           classes={{
             prev: "splide__arrow--prev ArowPrevOut",

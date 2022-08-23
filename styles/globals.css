@@ -50,3 +50,9 @@ font-weight: 700;
 .questions-container{
   background-color: #f0f0f0 !important;
 }
+@media (max-width : 992px) {
+  .img-reverse{
+  flex-direction: column-reverse !important;
+  }
+  
+}

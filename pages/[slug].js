@@ -10,19 +10,22 @@ const Categories = ({ product }) => {
           <h1 className="text-light">{product[0]?.category}</h1>
         </div>
       </div>
-      {product.map((pro) => (
-        <>
-          <div key={pro.id} className="row mt-3">
+      <div  className="row mt-3 mb-4">
             <div className="col-lg-7 col-12  ps-0 pe-2">
-              <img className="w-100 product-img" src={pro.image.ima1} alt="" />
+              <img className="w-100 product-img" src="https://conliving.de/wp-content/uploads/2022/05/BC1-Standard-Hof-Aussen-4-web.jpg" alt="" />
             </div>
             <div className="col-lg-5 col-12  pe-0 ps-2">
-              <img className="w-100 product-img" src={pro.image.ima2} alt="" />
+              <img className="w-100 product-img" src="https://conliving.de/wp-content/uploads/2022/05/BC1-Standard-Hof-Innen-2-web.jpg" alt="" />
             </div>
           </div>
-          <div className="border-bot mt-4 mb-4"></div>
-          <ProductsImage pro={pro} />
+      {product.map((pro) => (
+        <>
+      <div className="mt-5" key={pro.id}>
+      <ProductsImage pro={pro} />
           <ProductDetails pro={pro} />
+      </div>
+        
+         
         </>
       ))}
     </div>
