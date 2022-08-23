@@ -17,7 +17,7 @@ const ImportantQuestions = () => {
               <h5 className="">{question.question}</h5>
             </div>
 
-            <div class="collapse multi-collapse" id={question.data}>
+            <div className="collapse multi-collapse" id={question.data}>
               <div className="card card-body">{question.answer}</div>
             </div>
           </div>
