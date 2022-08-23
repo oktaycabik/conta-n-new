@@ -5,7 +5,7 @@ const ProductsImage = ({pro}) => {
     <div className="row">
     <div className="col-lg-4 col-12 mt-2">
       <Image
-        className="w-100 product-img"
+      
         width={400}
         height={275}
         objectFit='cover'
@@ -15,7 +15,7 @@ const ProductsImage = ({pro}) => {
     </div>
     <div className="col-lg-4 col-6 mt-2">
       <Image
-        className="w-100 product-img"
+        
         width={400}
         height={275}
         objectFit='cover'
@@ -25,7 +25,7 @@ const ProductsImage = ({pro}) => {
     </div>
     <div className="col-lg-4 col-6 mt-2">
       <Image
-        className="w-100 product-img"
+      
         objectFit='cover'
         width={400}
         height={275}
