@@ -23,7 +23,7 @@ const Referance = () => {
         </h4>
       </div>
       <div className="row pe-5 ps-5 mt-5 mb-5 justify-content-center">
-        <Splide
+        <Splide 
           classes={{
             prev: "splide__arrow--prev ArowPrevOut",
             next: "splide__arrow--next ArowNextOut",
@@ -117,7 +117,7 @@ const Referance = () => {
                 width={170}
               quality={50}
               className="d-block   p-2"
-              className="  p-2"
+            
               src="/assets/img/ReferansLogolar/7.png"
               alt="First slide"
             />
