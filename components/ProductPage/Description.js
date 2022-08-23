@@ -8,11 +8,11 @@ const Description = () => {
           <div className="col-lg-6 col-12 p-4 mt-3">
             <h3 className="">
               {" "}
-              Bürocontainer "Standard" Ausführung - Für eine moderne und
+              Bürocontainer Standard Ausführung - Für eine moderne und
               nachhaltige Unterkunft
             </h3>
             <p className="info">
-              Der Bürocontainer "Standard" ist fokussiert auf den
+              Der Bürocontainer Standard ist fokussiert auf den
               Gebrauchsnutzen und erfüllen dazu noch repräsentative Zwecke. Er
               daher auf Verkaufsflächen, Baustellen, Bauhöfen oder auf
               Fabrikgeländen zum Einsatz. Durch eine Lackierung in Wunschfarben
@@ -46,13 +46,13 @@ const Description = () => {
           <div className="col-lg-6 col-12 p-4 mt-3">
             <h3 className="">
               {" "}
-              Bürocontainer "Standard" Ausführung - Für eine moderne und
+              Bürocontainer Standard Ausführung - Für eine moderne und
               nachhaltige Unterkunft
             </h3>
             <p className="info">
-              Der Bürocontainer "Standard" ist fokussiert auf den
+              Der Bürocontainer Standard ist fokussiert auf den
               Gebrauchsnutzen und erfüllen dazu noch repräsentative Zwecke. Er
-              daher auf Verkaufsflächen, Baustellen, Bauhöfen oder auf
+              daher auf Verkaufsflächen Baustellen, Bauhöfen oder auf
               Fabrikgeländen zum Einsatz. Durch eine Lackierung in Wunschfarben
               oder eine lackierte Attika und oder Fenster - und Türumrahmungen
               kann eine individuelle Optik erreicht werden.
@@ -71,11 +71,11 @@ const Description = () => {
           <div className="col-lg-6 col-12 p-4 mt-3">
             <h3 className="">
               {" "}
-              Bürocontainer "Standard" Ausführung - Für eine moderne und
+              Bürocontainer Standard Ausführung - Für eine moderne und
               nachhaltige Unterkunft
             </h3>
             <p className="info">
-              Der Bürocontainer "Standard" ist fokussiert auf den
+              Der Bürocontainer Standard ist fokussiert auf den
               Gebrauchsnutzen und erfüllen dazu noch repräsentative Zwecke. Er
               daher auf Verkaufsflächen, Baustellen, Bauhöfen oder auf
               Fabrikgeländen zum Einsatz. Durch eine Lackierung in Wunschfarben
