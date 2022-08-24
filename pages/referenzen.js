@@ -12,7 +12,7 @@ const Referenzen = () => {
  
         {referenzen.map((refe) => (
          
-          <div className="col-lg-6 col-12  ">
+          <div key={refe.id} className="col-lg-6 col-12  ">
             <img
               className="w-100"
               src={refe.image.ima1}
