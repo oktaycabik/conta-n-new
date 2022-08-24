@@ -1,7 +1,9 @@
 
 import React from 'react'
 import AnlageInfo from '../components/AnlageInfo'
+import Catalog from '../components/Catalog'
 import Categories from '../components/Categories'
+import Contact from '../components/Contact'
 import ContainerIntro from '../components/ContainerIntro'
 import ImportantQuestions from '../components/ImportantQuestions'
 import KurzesAngebot from '../components/KurzesAngebot'
@@ -15,9 +17,11 @@ const index = () => {
       <KurzesAngebot/>
       <Referance/>
       <Categories/>
+      <Contact/>
       <ReferanceInfo/>
       <AnlageInfo/>
       <ImportantQuestions/>
+      <Catalog/>
     </>
   )
 }

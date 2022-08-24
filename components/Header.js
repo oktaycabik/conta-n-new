@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
@@ -22,16 +23,24 @@ const Header = () => {
             <div className="offcanvas-body p-lg-0">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <Link href="/"> 
+                  <a className="nav-link active" aria-current="page" >Home</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">About</a>
+                <Link href="/referenzen"> 
+                  <a className="nav-link active" aria-current="page" >Referance</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Blog</a>
+                <Link href="/angebote"> 
+                  <a className="nav-link active" aria-current="page" >Angebote</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Contact</a>
+                <Link href="/kontakt"> 
+                  <a className="nav-link active" aria-current="page" >Contact</a>
+                  </Link>
                 </li>
               </ul>
             </div>
