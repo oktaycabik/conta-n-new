@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import Script from "next/script"
 import "../styles/globals.css";
 import "../styles/header.css";
+import "../styles/angebote.css";
 import "../styles/category-image.css";
 import "../styles/container-intro.css";
 

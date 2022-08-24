@@ -3,11 +3,11 @@ import React from "react";
 const AnlageInfo = () => {
   return (
     <section className="container">
-      <div className="row pe-5 ps-5 mt-5 mb-5">
-        <div className="col-6">
-          <img src="https://cdn-djgbe.nitrocdn.com/aexqLNkCYpLucHGfDgNbHjSJwfoJxIwc/assets/static/optimized/rev-8ec7905/wp-content/themes/conliving-theme-2-2/assets/images/wohncontainer-fuer-arbeiter.jpg" />
+      <div className="row pr-5 pl-5  mt-5 mb-5">
+        <div className="col-lg-6 col-12 ">
+          <img className="w-100" src="https://cdn-djgbe.nitrocdn.com/aexqLNkCYpLucHGfDgNbHjSJwfoJxIwc/assets/static/optimized/rev-8ec7905/wp-content/themes/conliving-theme-2-2/assets/images/wohncontainer-fuer-arbeiter.jpg" />
         </div>
-        <div className="col-6 pt-4 ">
+        <div className="col-lg-6 col-12  pt-4 ">
           <h3 className="mb-4 mt-5">
             {" "}
             <b>

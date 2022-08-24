@@ -6,14 +6,14 @@ const TechnicalDetails = ({ product }) => {
       <div className="row pe-5 ps-5 justify-content-center mt-5">
         <h1 className="text-center mb-4">Technische Daten</h1>
         <div className="col-lg-8 col-12">
-          <img src={product.image.ima5} className="w-100" height={470} />
+          <img src={product.image.ima5} className="w-100 h-auto"  />
         </div>
       </div>
-      <div className="ow pe-5 ps-5 justify-content-center mt-5">
+      <div className="row pe-5 ps-5 justify-content-center mt-5">
       <table className="table table-bordered">
         <tbody>
           <tr>
-            <td colSpan={2} width={500} >
+            <td colSpan={2} width={300} >
             Länge
             </td>
             <td className="bg-dark text-light">{product.description.width}</td>

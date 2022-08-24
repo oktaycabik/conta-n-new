@@ -37,3 +37,15 @@
 .product-img:hover{
     opacity: 0.8;
 }
+.category-head{
+    line-height: 1.6;
+    color: #111;
+    font-size: 28px;
+    font-weight: 300;
+}
+.category-head-2{
+    font-size: 18px !important;
+    color: #000 !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+}

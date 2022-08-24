@@ -1,0 +1,31 @@
+.angebote {
+  font-size: 26px;
+  font-weight: bold;
+}
+.angebote-card{
+    padding: 8px !important;
+    background-color: #fafafa !important;
+    border: 1px solid #efefef !important;
+}
+.angebote-head{
+    color: #83bb22;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desc-angebote{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.text-angebote{
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .angebote {
+    font-size: 18px !important;
+    line-height: 2;
+  }
+}

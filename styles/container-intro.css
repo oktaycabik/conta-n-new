@@ -6,8 +6,24 @@
     text-align: center;
 }
 .intro-head{
-    font-weight: 700;
+    font-weight: 600 !important;
+    font-size: 25px;
 }
+.volle-head{
+    font-size: 25px !important;
+    font-weight: 400 !important;
+}
+@media (max-width: 992px) {
+    .intro-head{
+        font-weight: 700;
+        font-size: 21px !important;
+    }
+    .volle-head{
+        font-size: 21px !important;
+        font-weight: 400 !important;
+    }
+  }
+
 .intro-main{
   align-items: center;
     display: flex; 

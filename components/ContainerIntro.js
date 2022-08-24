@@ -30,7 +30,7 @@ const ContainerIntro = () => {
               />
             </div>
             <div className="col-lg-6 col-12 p-4 mt-3">
-              <h3 className="text-center">
+              <h3 className="text-center volle-head">
                 {" "}
                 <b>
                   {" "}

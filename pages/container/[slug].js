@@ -25,7 +25,7 @@ const Container = ({product}) => {
    </div>
    
    <div className='col-lg-6 col-12'>
-   <img height={470} className="w-100" src={product.image.ima1}></img>
+   <img  className="w-100" src={product.image.ima1}></img>
    </div>
   </div>
   

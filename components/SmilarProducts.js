@@ -17,17 +17,18 @@ const SmilarProducts = ({ product }) => {
   );
   return (
     <div className="container mt-5 mb-4 ">
-      <div className="pe-5 ps-5 ">
+      <div className="pr-5 pl-5 ">
       <h3 className="text-center pb-1">Ähnliche Produkte</h3>
         <Splide
           classes={{
             prev: "splide__arrow--prev ArowPrevOut",
             next: "splide__arrow--next ArowNextOut",
-            pagination: "splide__pagination Pagintaion",
+       
           }}
           options={{
             rewind: true,
             gap: "0.5rem",
+           
             perPage: 4,
             speed: 3000,
             breakpoints: {
@@ -51,7 +52,7 @@ const SmilarProducts = ({ product }) => {
             return (
               <SplideSlide key={product.id}>
                 <Link href={`/container/${product.slug}`}>
-                  <div className="  col-12 " key={product.id}>
+                  <div className="col-12" key={product.id}>
                     <div className="card-img-top text-center ">
                       <Image
                         width={280}
