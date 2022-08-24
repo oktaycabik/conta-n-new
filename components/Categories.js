@@ -18,7 +18,7 @@ Conliving ist der Ideale Partner bei der Umsetzung Ihrer Wünsche und Ziele.</h4
             <Link key={category.id} href={category.slug}>
           <div   className="col-lg-4 col-md-6 col-12 mb-3 category-list">
             <div className=" mt-2">
-              <Image objectFit="cover" height={261} width={370} className="card-img-top" src={category.image} alt="" />
+              <img objectFit="cover"  className="product-img" src={category.image} alt="" />
               <div className="card-body text-center">
                 <div  className="category-title mt-2">{category.category}</div>
                 <div className="category-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores nemo corrupti consequuntur</div>
