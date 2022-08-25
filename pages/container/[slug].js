@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Catalog from "../../components/Catalog";
 import ImportantQuestions from "../../components/ImportantQuestions";
 import TechnicalDetails from "../../components/ProductPage/ TechnicalDetails";
 import Description from "../../components/ProductPage/Description";
+import FilterInfo from "../../components/ProductPage/FilterInfo";
+import ProductFeatures from "../../components/ProductPage/ProductFeatures";
 import SmilarProducts from "../../components/SmilarProducts";
 import products from "../../data/products.json";
+
 const Container = ({ product }) => {
+  const [filter, setFilter] = useState(1);
   return (
     <>
       <div className="container">
@@ -47,10 +51,13 @@ const Container = ({ product }) => {
           </div>
         </div>
       </div>
-      <Description />
-      <TechnicalDetails product={product} />
+      <FilterInfo setFilter={setFilter} filter={filter}/>
+      {filter === 1 && <Description />}
+      {filter === 2 && <TechnicalDetails product={product} />}
+      {filter === 3 && <ProductFeatures product={product} />}
+
       <SmilarProducts product={product} />
-      <ImportantQuestions />
+      <ImportantQuestions product={product}/>
       <Catalog />
     </>
   );

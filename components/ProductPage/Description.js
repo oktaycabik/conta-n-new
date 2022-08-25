@@ -4,7 +4,7 @@ const Description = () => {
   return (
     <div className="container ">
       <section>
-        <div className="row justify-content-center mt-4 mb-5">
+        <div className="row justify-content-center mt-5 mb-5">
           <div className="col-lg-6 col-12 p-4 mt-3">
             <h3 className="">
               {" "}
