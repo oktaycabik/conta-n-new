@@ -1,6 +1,6 @@
 .contact {
-    background-color: #0a0a0a;
-    color: white;
+    background-color: #fafafa;
+    color: #0a0a0a;
    
   }
   .contact-title{
@@ -54,7 +54,7 @@ color: #0a0a0a !important;
     font-size: 14px;
   }
   .contact-info {
-    color: white;
+    color: #0a0a0a;
     text-decoration: none;
     font-size: 16px;
   }

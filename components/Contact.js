@@ -56,7 +56,7 @@ const Contact = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4 col-md-12 mx-auto col-12 ">
-              <h2 className="text-light">Kontaktieren Sie uns</h2>
+              <h2 className="text-dark">Kontaktieren Sie uns</h2>
               <div className="d-flex mt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

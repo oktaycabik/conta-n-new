@@ -16,34 +16,14 @@ const Container = ({ product }) => {
         <div className="row mt-5 justify-content-center">
           <div className="col-lg-4 col-12">
             <span>{product.content.text2}</span>
-            <h1 className="mt-3">
-              ({product.content.text1}!) {product.title}
+            <h1 className="mt-3 product-page-title">
+              ({product.content.text1}!) {product.title} (
+              {product.description.Area.split(":")[1]})
             </h1>
-            <span className="mt-4">
-              {" "}
-              <b> Kaufpreis:</b>{" "}
-            </span>
-            <span>{product.content.price}</span>
-            <div className="mt-3">
-              {" "}
-              <b>Beschreibung</b>{" "}
+            <div className="price-info mt-3"> 
+            <span className="kaufpreis"> <strong>Kaufpreis:</strong> </span> <span className="cutprice">{product.content.cutprice}</span>{" "}
+            <span className="price">9.100,00 € </span>
             </div>
-            <p className="mt-2">{product.content.text6}</p>
-            <div className="mt-3">
-              {" "}
-              <b>Maße</b>{" "}
-            </div>
-            <p className="mt-2">{product.content.text3}</p>
-            <div className="mt-3">
-              {" "}
-              <b>Maße</b>{" "}
-            </div>
-            <p className="mt-2">{product.content.text3}</p>
-            <div className="mt-3">
-              {" "}
-              <b>Maße</b>{" "}
-            </div>
-            <p className="mt-2">{product.content.text3}</p>
           </div>
 
           <div className="col-lg-6 col-12">
@@ -51,13 +31,13 @@ const Container = ({ product }) => {
           </div>
         </div>
       </div>
-      <FilterInfo setFilter={setFilter} filter={filter}/>
+      <FilterInfo setFilter={setFilter} filter={filter} />
       {filter === 1 && <Description />}
       {filter === 2 && <TechnicalDetails product={product} />}
       {filter === 3 && <ProductFeatures product={product} />}
 
       <SmilarProducts product={product} />
-      <ImportantQuestions product={product}/>
+      <ImportantQuestions product={product} />
       <Catalog />
     </>
   );

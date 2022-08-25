@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Container-Arten – diese Typen werden unterschieden",
+      "image":"https://conliving.de/wp-content/uploads/2020/10/wohncontainer_w1_angebot.jpg",
+      "slug":"container-arte",
+      "desc": "Sofort lieferbar. Der Wohncontainer W1 ist neu! inkl. einer Teeküche und Wohninterieur wie Bett, Tische und einem Badezimmer.",
+      "text": "Hat Ihnen unser Produkt gefallen? Wir freuen uns auf IhreBewertung!",
+      "button": "WEITERLESEN »"
+    },
+    {
+      "id": 2,
+      "title": "Basis- und Standard Container: Die Unterschiede",
+      "image":"https://conliving.de/wp-content/uploads/2020/10/wohncontainer_w1_angebot.jpg",
+      "slug":"basis-und-standard-container",
+      "desc": "Sofort lieferbar. Der Wohncontainer W1 ist neu! inkl. einer Teeküche und Wohninterieur wie Bett, Tische und einem Badezimmer.",
+      "text": "Hat Ihnen unser Produkt gefallen? Wir freuen uns auf IhreBewertung!",
+      "button": "WEITERLESEN »"
+    }
+  ]

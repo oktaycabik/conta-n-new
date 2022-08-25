@@ -1,0 +1,22 @@
+
+ .footer {
+    background-color: #0a0a0a;
+    width: 100%;
+    padding: 50px 24px;
+    bottom: 0;
+    color: white;
+  }
+  .footer-head {
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .footer-color {
+    font-size: 13px;
+    cursor: pointer;
+    
+  }
+  .fzMob{
+    font-size: 14px !important;
+  }

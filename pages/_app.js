@@ -2,9 +2,12 @@ import Layout from "../components/Layout";
 import Script from "next/script"
 import "../styles/globals.css";
 import "../styles/header.css";
+import "../styles/blog.css";
 import "../styles/catalog.css";
 import "../styles/angebote.css";
 import "../styles/contact.css";
+import "../styles/footer.css";
+import "../styles/product-page.css";
 import "../styles/referenzen.css";
 import "../styles/category-image.css";
 import "../styles/container-intro.css";
