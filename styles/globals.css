@@ -34,14 +34,20 @@ h4 {
   cursor: pointer;
   padding: 8px 12px;
   font-weight: 700;
+  -webkit-font-smoothing: antialiased !important;
   border: none !important;
 }
 .button-dark-small {
   background-color: #0a0a0a;
   color: #fff;
   cursor: pointer;
-  padding: 4px 8px;
-  font-weight: 500;
+
+  font-size: 15px !important;
+ 
+  overflow: visible;
+  padding: 6px 14px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased !important;
   border: none !important;
 }
 .questions-container {

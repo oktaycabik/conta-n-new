@@ -30,6 +30,14 @@ const FilterInfo = ({ filter, setFilter }) => {
           Inneneinrichtung
         </span>
         </div>
+        <div className="col-lg-3 col-12 text-center mt-3">
+        <span
+          onClick={() => setFilter(4)}
+          className={`${filter === 4 ? "filter-active" : ""}  filter-text`}
+        >
+          Video
+        </span>
+        </div>
       </div>
     </div>
   );

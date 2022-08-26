@@ -20,7 +20,7 @@ const ReferanceInfo = () => {
         </div>
 
         <div className="col-lg-6 col-12 ">
-          <img className="w-100" src="https://cdn-djgbe.nitrocdn.com/aexqLNkCYpLucHGfDgNbHjSJwfoJxIwc/assets/static/optimized/rev-8ec7905/wp-content/themes/conliving-theme-2-2/assets/images/referenzen-view.png" />
+          <img className="w-100" src="https://conliving.de/wp-content/themes/conliving-theme-2-2/assets/images/referenzen-view.png" />
         </div>
       </div>
     </section>

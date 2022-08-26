@@ -7,6 +7,7 @@ import "../styles/catalog.css";
 import "../styles/angebote.css";
 import "../styles/contact.css";
 import "../styles/footer.css";
+import "../styles/banner.css";
 import "../styles/product-page.css";
 import "../styles/referenzen.css";
 import "../styles/category-image.css";

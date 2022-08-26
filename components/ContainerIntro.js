@@ -25,7 +25,7 @@ const ContainerIntro = () => {
             <div className="col-lg-5 col-12 ">
               <img
                 className="intro-img"
-                src="https://cdn-djgbe.nitrocdn.com/aexqLNkCYpLucHGfDgNbHjSJwfoJxIwc/assets/static/optimized/rev-8ec7905/wp-content/themes/conliving-theme-2-2/assets/images/1x1-conliving-w6-schnelleunterkunft.jpg"
+                src="https://conliving.de/wp-content/themes/conliving-theme-2-2/assets/images/1x1-conliving-w6-schnelleunterkunft.jpg"
                 alt=""
               />
             </div>

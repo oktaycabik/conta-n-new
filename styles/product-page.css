@@ -16,3 +16,65 @@
 .price{
     font-size: 16px;
 }
+.product-card-color{
+    background-color: #eee;
+    padding: 15px !important;
+}
+.product-card-color .head{
+    font-size: 14px;
+    color: #0a0a0a !important;
+    font-weight: 700;
+}
+.product-card-color select{
+    font-size: 14px;
+    height: 2.5rem;
+    max-width: 50%;
+    margin: 0;
+    min-width: 75%;
+    display: inline-block;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    color: #0a0a0a;
+    background-color: #fefefe;
+    border-radius: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%2851, 51, 51%29'></polygon></svg>");
+    -webkit-background-size: 9px 6px;
+    background-size: 9px 6px;
+    background-position: right -1rem center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border: 1px solid #cacaca;
+    -webkit-appearance: none;
+    outline: none;
+}
+.product-card-color .mabe{
+    font-size: 14px;
+    color: #0a0a0a !important;
+    font-weight: 700;
+}
+.product-card-color .area{
+    font-size: 14px;
+    color: #0a0a0a !important;
+    font-weight: 700;
+}
+.product-card-color .area-info{
+    font-size: 14px;
+    color: #0a0a0a !important;
+   
+}
+.product-card-color .info-text{
+    font-size: 14px;
+    color: red !important;
+   
+}
+.product-card-color .info-desc{
+    font-size: 12px;
+    color: #0a0a0a !important;
+    font-weight: bold;
+   
+}
+.product-card-color .info-desc-text{
+    font-size: 12px;
+    color: #0a0a0a !important;
+  
+   
+}

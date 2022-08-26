@@ -1,6 +1,7 @@
 
 import React from 'react'
 import AnlageInfo from '../components/AnlageInfo'
+import Banner from '../components/Banner'
 import Catalog from '../components/Catalog'
 import Categories from '../components/Categories'
 import Contact from '../components/Contact'
@@ -13,6 +14,7 @@ import ReferanceInfo from '../components/ReferanceInfo'
 const index = () => {
   return (
     <>
+      <Banner/>
       <ContainerIntro/>
       <KurzesAngebot/>
       <Referance/>
