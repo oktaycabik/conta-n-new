@@ -23,17 +23,16 @@
 .banner-title{
     z-index: 4;
     
-    height: auto;
+  
     width: auto;
     color: rgb(255, 255, 255);
     text-decoration: none;
     white-space: normal;
-    min-height: 0px;
-    min-width: 0px;
+   
     max-height: none;
     max-width: none;
     text-align: left;
-    line-height: 50px;
+  
     text-shadow: rgb(12 23 37 / 65%) 0px 10px 30px;
     letter-spacing: 0px;
     font-weight: 700;
@@ -146,13 +145,11 @@
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    height: auto;
-    width: auto;
+    
     color: rgb(255, 255, 255);
     text-decoration: none;
     white-space: normal;
-    min-height: 0px;
-    min-width: 0px;
+  
     max-height: none;
     max-width: none;
     text-align: left;
@@ -242,9 +239,32 @@
     margin-top: 10px;
     margin-bottom: 0px;
 }
-@media (min-width : 992px) {
+.buttons-row{
+    display: flex !important;
+}
+@media (max-width : 992px) {
     .banner-info-card  {
     display: none !important;
     }
-    
+    .banner-title{
+        font-size: 30px;
+    }
+    .hero-banner-content{
+        padding-bottom: 10px !important;
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+    .banner-card{
+        font-size: 15px !important;
+    }
+    .test{
+        display: none !important;
+        
+    }
+    .buttons-row{
+        display: block !important;
+    }
+    .banner-btn2{
+       display: none !important;
+    }
   }

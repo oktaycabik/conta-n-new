@@ -14,6 +14,7 @@ import "../styles/category-image.css";
 import "../styles/container-intro.css";
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
       <link
