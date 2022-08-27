@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div class="hero-banner">
+    <div className="hero-banner">
       <div className="container">
         <div className="row ">
           <div className="col-lg-6 col-0 pt-5 ">
