@@ -2,6 +2,7 @@ import React from "react";
 import products from "../data/products.json";
 import ProductsImage from "../components/CategoryProducts/ProductsImage";
 import ProductDetails from "../components/CategoryProducts/ProductDetails";
+import categories from "../data/category.json"
 const Categories = ({ product }) => {
   return (
     <div className="container pl-5 pr-5">
@@ -34,7 +35,7 @@ const Categories = ({ product }) => {
 
 export default Categories;
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   // Fetch data from external API
 
   const product = products.filter(
@@ -42,4 +43,10 @@ export async function getServerSideProps(context) {
   );
   // Pass data to the page via props
   return { props: { product } };
+}
+export async function getStaticPaths(context) {
+  const paths =categories.map(cate=>({
+    params:{slug:cate.slug}
+  }))
+  return {paths,fallback:false}
 }

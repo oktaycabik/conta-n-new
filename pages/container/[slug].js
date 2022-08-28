@@ -15,10 +15,10 @@ const Container = ({ product }) => {
       <div className="container">
         <div className="row pr-5 pl-5 mt-5 justify-content-center">
           <div className="col-lg-5 pr-5 col-12">
-            <span>{product.content.text2}</span>
+            <span>{product?.content?.text2}</span>
             <h1 className="mt-3 product-page-title">
-              ({product.content.text1}!) {product.title} (
-              {product.description.Area.split(":")[1]})
+              ({product?.content?.text1}!) {product?.title} (
+              {product.description?.Area?.split(":")[1]})
             </h1>
             <div className="price-info mt-3">
               <span className="kaufpreis">
@@ -33,7 +33,7 @@ const Container = ({ product }) => {
                 {" "}
                 <strong>Kaufpreis:</strong>{" "}
               </span>{" "}
-              <span className="price">{product.content.price} </span>
+              <span className="price">{product?.content?.price} </span>
             </div>
 
             <div className="product-card-color col-12  mt-3">
@@ -46,7 +46,7 @@ const Container = ({ product }) => {
               <div className="mt-2 mabe">Maße der Basis Ausstattung</div>
               <div className="mt-2">
                 <span className="area">Größe: </span>
-                <span className="area-info">{product.content.text3}</span>
+                <span className="area-info">{product?.content?.text3}</span>
               </div>
               <div className="mt-3 info-text">
                 Produkt ist sofort erhältlich.
@@ -74,7 +74,7 @@ const Container = ({ product }) => {
               height="450"
               objectFit="cover"
               className="w-100 "
-              src={product.image.ima1}
+              src={product?.image?.ima1}
             />
             <div className="d-flex justify-content-between mt-2">
               <Image
@@ -82,7 +82,7 @@ const Container = ({ product }) => {
                 height="135"
                 objectFit="cover"
                 className="w-100"
-                src={product.image.ima1}
+                src={product?.image?.ima1}
               ></Image>
 
               <Image
@@ -90,7 +90,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product.image.ima2}
+                src={product?.image?.ima2}
               ></Image>
 
               <Image
@@ -98,7 +98,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product.image.ima3}
+                src={product?.image?.ima3}
               ></Image>
 
               <Image
@@ -106,7 +106,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product.image.ima5}
+                src={product?.image?.ima5}
               ></Image>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Container = ({ product }) => {
 
 export default Container;
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   // Fetch data from external API
   const product = products.find(
     (product) => product.slug === context.params.slug
@@ -134,4 +134,10 @@ export async function getServerSideProps(context) {
 
   // Pass data to the page via props
   return { props: { product } };
+}
+export async function getStaticPaths(context) {
+  const paths =products.map(pro=>({
+    params:{slug:pro.slug}
+  }))
+  return {paths,fallback:false}
 }
