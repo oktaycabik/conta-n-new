@@ -1,7 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 const Header = () => {
+  const router = useRouter()
+  const [search, setSearch] = React.useState("")
+  const handleSubmit=(e) => {
+    router.push(`/product?s=${search}`)
+    e.preventDefault()
+  }
   return (
     <div>
            <nav className="navbar navbar-expand-lg navbar-light bg-dark">
@@ -42,8 +49,13 @@ const Header = () => {
                   <a className="nav-link active" aria-current="page" >Contact</a>
                   </Link>
                 </li>
+                <form onSubmit={handleSubmit}>
+                <input value={search} onChange={(e)=>setSearch(e.target.value)} placeholder='search' className='bg-light' type="text"/>
+                </form>
+                
               </ul>
             </div>
+       
           </div>
         </div>
       </nav>

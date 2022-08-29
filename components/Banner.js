@@ -22,7 +22,7 @@ const Banner = () => {
                 <span className="banner-card-desc">Finanzierung ohne Eigenkapital. LEASING AB 48 MONATEN</span>
             </div>
           </div>
-          <div className="col-lg-6 col-12 hero-banner-content pt-5 pl-5">
+          <div className="col-lg-6 col-12 hero-banner-content pt-5 ">
             <h1 className="banner-title">Bürocontainer</h1>
             <h2 className="banner-title text-color">Kaufen</h2>
             <div className="banner-card mt-4">
