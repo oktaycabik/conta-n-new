@@ -14,6 +14,10 @@
   background-position: left !important ;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 2s;
+}
+.hero-banner:hover{
+
 }
 .banner-text {
   display: flex !important;

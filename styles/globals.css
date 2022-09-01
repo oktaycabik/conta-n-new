@@ -129,3 +129,17 @@ h4 {
   transform: translate(0px, 0px);
   visibility: visible;
 }
+.pages-head{
+  background-color: #cf0f0fcf !important;
+  margin: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.pages-head span{
+  color: #fff;
+  font-size: 28px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
