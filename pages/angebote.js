@@ -2,7 +2,10 @@ import React from "react";
 import products from "../data/products.json";
 import ProductsImage from "../components/CategoryProducts/ProductsImage";
 import ProductDetails from "../components/CategoryProducts/ProductDetails";
+
 const Angebote = () => {
+  const filterAngebot = products.filter((pro) => pro.isInStock);
+
   return (
     <div className="container pl-5 pr-5">
       <div className="row pl-5 pr-5 justify-content-center">
@@ -26,13 +29,11 @@ const Angebote = () => {
           />
         </div>
       </div>
-      {products.map((pro) => (
-        <>
-          <div className="mt-5" key={pro.id}>
-            <ProductsImage pro={pro} />
-            <ProductDetails pro={pro} />
-          </div>
-        </>
+      {filterAngebot.map((pro) => (
+        <div className="mt-5" key={pro.id}>
+          <ProductsImage pro={pro} />
+          <ProductDetails pro={pro} />
+        </div>
       ))}
     </div>
   );

@@ -1,0 +1,23 @@
+.WhyWeBg {
+    background-image: radial-gradient(#525252 30%, #000000) !important;
+  }
+  .BorderWyWe {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .zoomWhyWe:hover {
+    transform: scale(1.10);
+    transition: transform .2s;
+  }
+  .fz-25{
+    font-size: 25px !important;
+  }
+  .fz-15{
+    font-size: 15px !important;
+  }
+  .fw-700{
+    font-weight: 700 !important;
+  }

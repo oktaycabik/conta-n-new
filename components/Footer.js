@@ -183,9 +183,9 @@ const Footer = () => {
                 <div className="mt-1 fzMob cursor footer-color">AGB</div>
               </Link>
               <Link href="https://www.containhaus.de/assets/img/KATALOG.pdf">
-                <div className="mt-1 fzMob cursor p-1 footer-color border border-light d-inline-block">
-                  CATALOG HERUNTERLADEN
-                </div>
+                <a className="mt-1 fzMob cursor p-1 footer-color border border-light d-inline-block">
+                  KATALOG HERUNTERLADEN
+                </a>
               </Link>
             </div>
 

@@ -92,3 +92,15 @@ h4 {
 .filter-active{
   font-weight: 600;
 }
+.cursor{
+  cursor: pointer !important;
+}
+.button-white{
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 8px 14px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased !important;
+  border: none !important;
+}

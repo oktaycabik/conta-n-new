@@ -13,16 +13,11 @@ import "@splidejs/react-splide/css/core";
 const Referance = () => {
   return (
     <section className="container">
-      <div className="row pr-5 pl-5  mt-5  justify-content-center">
-        <h2 className="text-center refe-head">Kunden der Conlinving GmbH</h2>
-        <h4 className="text-center refe-desc mt-2">
-          Durch das Tagesgeschäft mit großen Kunden wendet sich Conliving an
-          Großunternehmen aber auch an mittelständische und kleine Unternehmen.
-          Conliving ist der ideale Partner für individuelle Wünsche und
-          Planungen
-        </h4>
+      <div className="row pr-5 pl-5  mt-3  justify-content-center">
+        <h2 className="text-center refe-head">Referenzen</h2>
+        
       </div>
-      <div className="row pr-5 pl-5 mt-5 mb-5 justify-content-center">
+      <div className="row pr-5 pl-5 mt-2 mb-3 justify-content-center">
         <Splide 
           classes={{
             prev: "splide__arrow--prev ArowPrevOut",

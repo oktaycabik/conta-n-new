@@ -5,6 +5,7 @@ import "../styles/header.css";
 import "../styles/blog.css";
 import "../styles/catalog.css";
 import "../styles/angebote.css";
+import "../styles/whywe.css";
 import "../styles/contact.css";
 import "../styles/footer.css";
 import "../styles/banner.css";
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
         crossOrigin="anonymous"
       ></link>
+       
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

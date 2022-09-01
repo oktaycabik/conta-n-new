@@ -10,12 +10,14 @@ import ImportantQuestions from '../components/ImportantQuestions'
 import KurzesAngebot from '../components/KurzesAngebot'
 import Referance from '../components/Referance'
 import ReferanceInfo from '../components/ReferanceInfo'
+import WhyWeComponent from '../components/WhyWeComponent'
 
 const index = () => {
   return (
     <>
       <Banner/>
       <ContainerIntro/>
+      <WhyWeComponent/>
       <KurzesAngebot/>
       <Referance/>
       <Categories/>

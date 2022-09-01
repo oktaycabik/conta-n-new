@@ -72,7 +72,7 @@ const Container = ({ product }) => {
             <img
             
               height="450"
-              objectFit="cover"
+          
               className="w-100 "
               src={product?.image?.ima1}
             />

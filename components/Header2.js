@@ -5,15 +5,34 @@ const Header2 = () => {
   const router = useRouter();
   const [search, setSearch] = React.useState("");
   const handleSubmit = (e) => {
-    router.push(`/product?s=${search}`);
     e.preventDefault();
+    if (search.length > 0) {
+      router.push(`/product?s=${search}`);
+    }
   };
   return (
     <header className="header">
       <div className="header-top">
-        <div className="container ps-5 pe-5">
+        <div className="container pr-5 pl-5">
           <div className="top-bar ">
-            <div className="nav-number">KATALOG</div>
+            <Link href="https://www.containhaus.de/assets/img/KATALOG.pdf">
+              <a
+                target="blank"
+                className="nav-number  d-flex align-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-file-earmark-arrow-down-fill me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
+                </svg>
+                KATALOG
+              </a>
+            </Link>
 
             <div className="d-flex ">
               <div className="d-flex align-items-center pe-3">
@@ -55,7 +74,7 @@ const Header2 = () => {
         </div>
       </div>
       <div className="header-mid ">
-        <div className="container ps-5 pe-5">
+        <div className="container pr-5 pl-5">
           <div className="mid-bar">
             <img
               className=""
@@ -63,7 +82,24 @@ const Header2 = () => {
               width={120}
               src="/assets/img/RedBlack.webp"
             />
-            <form className="ms-5" onSubmit={handleSubmit}>
+            <form className=" search-box" onSubmit={handleSubmit}>
+              <svg
+                version="1.1"
+                className="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 51.539 51.361"
+                enableBackground="new 0 0 51.539 51.361"
+                space="preserve"
+              >
+                {" "}
+                <path
+                  fill="#444"
+                  d="M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26 S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082 c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z"
+                ></path>{" "}
+              </svg>
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -73,7 +109,7 @@ const Header2 = () => {
             </form>
             <div className="mt-3 mb-3 nav-icons">
               <Link href="https://www.facebook.com/ContainHaus">
-                <a className="">
+                <a target="blank" className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -87,7 +123,7 @@ const Header2 = () => {
                 </a>
               </Link>
               <Link href="https://twitter.com/ContainHaus">
-                <a className="ms-3 ">
+                <a target="blank" className="ms-3 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -101,7 +137,7 @@ const Header2 = () => {
                 </a>
               </Link>
               <Link href="https://www.instagram.com/containhaus/">
-                <a className="ms-3 ">
+                <a target="blank" className="ms-3 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
@@ -115,7 +151,7 @@ const Header2 = () => {
                 </a>
               </Link>
               <Link href="https://tr.linkedin.com/company/contain-haus?trk=public_profile_experience-item_profile-section-card_image-click">
-                <a className="ms-3">
+                <a target="blank" className="ms-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -129,7 +165,7 @@ const Header2 = () => {
                 </a>
               </Link>
               <Link href="https://www.youtube.com/channel/UCDbpL6rsln1udSYWcTARyGg">
-                <a className="ms-3 me-2">
+                <a target="blank" className="ms-3 me-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="36"
@@ -146,7 +182,7 @@ const Header2 = () => {
           </div>
         </div>
       </div>
-      <div className="header-bot ">
+      <div className="header-bot">
         <div
           className="mobile-bot"
           type="button"
@@ -193,15 +229,13 @@ const Header2 = () => {
               <li>
                 <Link href="/">
                   <a className="text-dark">
-                
                     <img
                       width={22}
                       height={26}
-                      className="me-1"
+                      className="me-2"
                       src="/assets/img/container.svg"
                     />
                     <span className="">Container</span>
-                   
                   </a>
                 </Link>
               </li>
@@ -265,6 +299,7 @@ const Header2 = () => {
                   </a>
                 </Link>
               </li>
+             
             </ul>
           </div>
         </div>
@@ -319,22 +354,22 @@ const Header2 = () => {
                   </a>
                 </Link>
               </li>
-              <li >
+              <li>
                 <Link href="/angebote">
                   <a className="text-dark ">
-                    <span> 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="bi bi-receipt-cutoff me-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                      <path d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293 2.354.646zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118l.137-.274z" />
-                    </svg>
-                    <span className="">Kurze Angebot</span>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="bi bi-receipt-cutoff me-2"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+                        <path d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293 2.354.646zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118l.137-.274z" />
+                      </svg>
+                      <span className="">Kurze Angebot</span>
                     </span>
                   </a>
                 </Link>

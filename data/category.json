@@ -3,31 +3,37 @@
     "id": "1",
     "category": "Cafe Container",
     "slug": "cafe-container",
-    "image": "/assets/img/FrontPage/BuroMainpageUpdate.webp"
+    "image": "/assets/img/Category/cafeCategory.webp",
+    "desc":"Eine der besten Eigenschaften der Container von Contain Haus ist, dass sie mobil und tragbar sind. Sie werden auch die hohen Mietpreise los, die Geschäftsinhaber befürchten."
+   
   },
   {
     "id": "2",
     "category": "Sanitärcontainer",
     "slug": "sanitarcontainer",
-    "image": "/assets/img/FrontPage/SanitaMainpageUpdate.webp"
+    "image": "/assets/img/Category/SanitaCategory.webp",
+    "desc":"Toiletten, die den Entwicklungsstand der Zivilisationen belegen, sind aus unserem modernen Zuhause nicht mehr wegzudenken. Wenn wir diesen Bedarf außerhalb unseres Hauses decken möchten, ist Sanitärcontainer eine gute Option."
   },
   {
     "id": "3",
     "category": "Bürocontainer",
     "slug": "burocontainer",
-    "image": "/assets/img/FrontPage/BuroMainpageUpdate.webp"
+    "image": "/assets/img/Category/BuroCategory.webp",
+    "desc":"CONTAINHAUS Container setzt auf Wohlfühlen & Sicherheit. Erfahren Sie alle technischen Daten über unsere Container Module wie z.B. Traglast und Isolationsmaterial. Im Vordergrund steht für uns die Qualität."
   },
   {
     "id": "4",
     "category": "Wohncontainer",
     "slug": "wohncontainer",
-    "image": "/assets/img/FrontPage/XLMainpageUpdate.webp"
+    "image": "/assets/img/Category/WohnCategory.webp",
+    "desc":"Möchten Sie den Preis eines Wohncontainers wissen? Wenn ja, sind wir hier, um Ihnen die Antwort auf genau diese Frage zu geben."
   },
 
   {
     "id": "5",
     "category": "Flatpack",
     "slug": "flatpack",
-    "image": "/assets/img/FrontPage/FlatpackMainPage.webp"
+    "image": "/assets/img/Category/flatCategory.webp",
+    "desc":"Flat-Pack-Container, bestehend aus Boden-, Decken-, Fenster-, Tür- und Sandwichplatten, die einfach ineinander gesteckt werden können, können vom Endverbraucher einfach installiert werden. Flat Pack ist eine großartige Gelegenheit für diejenigen, die günstigere Preise wünschen!"
   }
 ]
