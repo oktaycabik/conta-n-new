@@ -53,11 +53,11 @@ const Catalog = () => {
         <div className="col-lg-3 col-6 m-auto mt-3">
           <img
             className="w-100"
-            src="https://conliving.de/wp-content/themes/conliving-theme-2-2/assets/images/modules/brochure_titel.png"
+            src="/assets/img/katalog.webp"
           />
           <div className="d-flex justify-content-center">
             {" "}
-            <button className="button-dark mt-2">Download Katalog</button>{" "}
+            <a href="https://www.containhaus.de/assets/img/KATALOG.pdf" target="blank" className="button-dark mt-2">Download Katalog</a>{" "}
           </div>
         </div>
       </div>

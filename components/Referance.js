@@ -14,10 +14,10 @@ const Referance = () => {
   return (
     <section className="container">
       <div className="row pr-5 pl-5  mt-3  justify-content-center">
-        <h2 className="text-center refe-head">Referenzen</h2>
+        <h2 className="text-center  referenzen-title">Referenzen</h2>
         
       </div>
-      <div className="row pr-5 pl-5 mt-2 mb-3 justify-content-center">
+      <div className="row pr-5 pl-5  mb-3 justify-content-center">
         <Splide 
           classes={{
             prev: "splide__arrow--prev ArowPrevOut",
@@ -46,20 +46,40 @@ const Referance = () => {
           }}
           aria-label="My Favorite Images"
         >
-          <SplideSlide className="ms-5">
+          <SplideSlide className="">
             <Image
-             height={100}
-             width={170}
+             height={150}
+             width={220}
               quality={50}
               className="d-block  p-2"
-              src="/assets/img/ReferansLogolar/1.png"
+              src="/assets/img/ReferansLogolar/amazon.png"
               alt="First slide"
             />
           </SplideSlide>
           <SplideSlide>
             <Image
-            height={100}
-            width={170}
+           height={150}
+           width={220}
+              quality={50}
+              className="d-block   p-2"
+              src="https://marka-logo.com/wp-content/uploads/2020/08/DHL-Logo.png"
+              alt="First slide"
+            />
+          </SplideSlide>
+          <SplideSlide>
+            <Image
+           height={150}
+           width={220}
+              quality={50}
+              className="d-block   p-2"
+              src="/assets/img/ReferansLogolar/3.png"
+              alt="First slide"
+            />
+          </SplideSlide>
+          <SplideSlide className="">
+            <Image
+          height={150}
+          width={220}
               quality={50}
               className="d-block   p-2"
               src="/assets/img/ReferansLogolar/2.png"
@@ -68,28 +88,8 @@ const Referance = () => {
           </SplideSlide>
           <SplideSlide>
             <Image
-           height={100}
-           width={170}
-              quality={50}
-              className="d-block   p-2"
-              src="/assets/img/ReferansLogolar/3.png"
-              alt="First slide"
-            />
-          </SplideSlide>
-          <SplideSlide className="ms-5">
-            <Image
-            height={100}
-            width={170}
-              quality={50}
-              className="d-block   p-2"
-              src="/assets/img/ReferansLogolar/4.png"
-              alt="First slide"
-            />
-          </SplideSlide>
-          <SplideSlide>
-            <Image
-            height={100}
-            width={170}
+            height={150}
+            width={220}
               quality={50}
               className="d-block   p-2"
               src="/assets/img/ReferansLogolar/5.png"
@@ -98,8 +98,8 @@ const Referance = () => {
           </SplideSlide>
           <SplideSlide>
             <Image
-              height={100}
-              width={170}
+          height={150}
+          width={220}
               quality={50}
               className="d-block   p-2"
               src="/assets/img/ReferansLogolar/6.png"
@@ -108,12 +108,12 @@ const Referance = () => {
           </SplideSlide>
           <SplideSlide>
             <Image
-                height={100}
-                width={170}
+               height={150}
+               width={220}
               quality={50}
               className="d-block   p-2"
             
-              src="/assets/img/ReferansLogolar/7.png"
+              src="https://media.glassdoor.com/sqll/2870486/gro%C3%9Fe-vehne-squarelogo-1568723765801.png"
               alt="First slide"
             />
           </SplideSlide>

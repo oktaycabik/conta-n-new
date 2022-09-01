@@ -53,10 +53,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact mb-5">
-        <div className="container">
-          <div className="row align-items-center">
+        <div className="container py-4">
+          <div className="row align-items-center  border">
             <div className="col-lg-4 col-md-12 mx-auto col-12 ">
-              <h2 className="text-dark">Kontaktieren Sie uns</h2>
+              <h2 className="">Kontaktieren Sie uns</h2>
               <div className="d-flex mt-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Contact = () => {
                 </svg>
                 <h5 className="ms-4">
                   {" "}
-                  <a href="tel:+4923028894880" className="contact-info">
+                  <a href="tel:+4923028894880" className="contact-info text-dark">
                     +49 2302 889 4880
                   </a>
                 </h5>
@@ -107,7 +107,7 @@ const Contact = () => {
                 </svg>
                 <h5 className="ms-4">
                   {" "}
-                  <a href="mailto:info@containhaus.de" className="contact-info">
+                  <a href="mailto:info@containhaus.de" className="contact-info text-dark">
                     info@containhaus.de
                   </a>
                 </h5>
@@ -130,51 +130,51 @@ const Contact = () => {
                     d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"
                   />
                 </svg>
-                <h5 className="ms-4">
+                <h5 className="ms-3">
                   <Link href="/assets/img/KATALOG.pdf">
                     <a
-                      className="contact-info-btn"
+                      className="contact-info-btn text-dark"
                       id="PdfDetail"
                       target="_blank"
                     >
-                      <span className="text-dark">Catalog herunterladen</span>
+                      <span className="text-dark">Katalog herunterladen</span>
                     </a>
                   </Link>
                 </h5>
               </div>
-              <div className="mt-4">
-                <div className="footer-head">
-                  Inhaber:<span className="footer-color">Abraham Wach </span>{" "}
+              <div className="mt-4 text-dark">
+                <div className="footer-head text-dark">
+                  Inhaber:<span className="footer-color text-dark">Abraham Wach </span>{" "}
                 </div>
-                <div className="footer-head">
+                <div className="footer-head text-dark">
                   BANKNAME:
-                  <span className="footer-color">
+                  <span className="footer-color text-dark">
                     Volksbank Sprockhövel
                   </span>{" "}
                 </div>
-                <div className="footer-head">
-                  SWIFTCODE:<span className="footer-color">GENODEM1SPO </span>
+                <div className="footer-head text-dark">
+                  SWIFTCODE:<span className="footer-color text-dark">GENODEM1SPO </span>
                 </div>
-                <div className="footer-head">
+                <div className="footer-head text-dark">
                   KONTOINHABER:
-                  <span className="footer-color">
+                  <span className="footer-color text-dark">
                     CONTAIN HAUS CONTAINER
                   </span>{" "}
                 </div>
-                <div className="footer-head">
+                <div className="footer-head text-dark">
                   IBAN:
-                  <span className="footer-color">
+                  <span className="footer-color text-dark">
                     DE4145 2615 4700 1398 6200
                   </span>{" "}
                 </div>
-                <div className="footer-head">
+                <div className="footer-head text-dark">
                   Steuernummer. :
-                  <span className="footer-color">348/5203/3253</span>{" "}
+                  <span className="footer-color text-dark">348/5203/3253</span>{" "}
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 col-md-12 col-12">
-              <div className="card mt-4 mb-4">
+            <div className="col-lg-5 col-md-12 col-12 me-5">
+              <div className="card mt-4 mb-4 ">
                 <form
                   ref={form}
                   onSubmit={handleSubmit}
@@ -227,7 +227,7 @@ const Contact = () => {
                     />
                   </label>
                   <div className="d-flex justify-content-center">
-                    <button type="submit" value="Send" className="contact-btn">
+                    <button type="submit" value="Send" className="button-dark">
                       Senden
                     </button>
                   </div>

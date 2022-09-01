@@ -7,15 +7,15 @@ import "@splidejs/react-splide/css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer ">
+      <footer className="footer border">
         <div className="container ">
           <div className="row justify-content-center ">
             <div className="col-lg-3 col-md-6 col-sm-6   ">
               <div className="">
                 <Image
-                  height={65}
-                  width={150}
-                  src="/assets/img/1.png"
+                  height={112}
+                  width={270}
+                  src="/assets/img/contain-haus-white-logo.webp"
                 />
               </div>
               <div className="mb-2">

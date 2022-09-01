@@ -1,13 +1,13 @@
 
  .footer {
-    background-color: #0a0a0a;
+  background-image: radial-gradient(#cf0f0fcf 30%, #68040bcf) !important;
     width: 100%;
     padding: 50px 24px;
     bottom: 0;
-    color: white;
+    color: #fff;
   }
   .footer-head {
-    color: #fefefe;
+    color: #fff;
     font-size: 15px;
     font-weight: 700;
   }

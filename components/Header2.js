@@ -78,9 +78,9 @@ const Header2 = () => {
           <div className="mid-bar">
             <img
               className=""
-              height={80}
-              width={120}
-              src="/assets/img/RedBlack.webp"
+              height={112}
+              width={240}
+              src="/assets/img/contain-haus-logo.webp"
             />
             <form className=" search-box" onSubmit={handleSubmit}>
               <svg
@@ -112,8 +112,8 @@ const Header2 = () => {
                 <a target="blank" className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
+                    width="25"
+                    height="25"
                     fill="#1a77f2"
                     className="bi bi-facebook"
                     viewBox="0 0 16 16"
@@ -126,8 +126,8 @@ const Header2 = () => {
                 <a target="blank" className="ms-3 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
+                    width="25"
+                    height="25"
                     fill="#1e9bf0"
                     className="bi bi-twitter"
                     viewBox="0 0 16 16"
@@ -140,8 +140,8 @@ const Header2 = () => {
                 <a target="blank" className="ms-3 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
+                    width="25"
+                    height="25"
                     fill="#f60e51"
                     className="bi bi-instagram"
                     viewBox="0 0 16 16"
@@ -154,8 +154,8 @@ const Header2 = () => {
                 <a target="blank" className="ms-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="25"
+                    height="25"
                     fill="#0277b5"
                     className="bi bi-linkedin"
                     viewBox="0 0 16 16"
@@ -168,8 +168,8 @@ const Header2 = () => {
                 <a target="blank" className="ms-3 me-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
+                    width="28"
+                    height="28"
                     fill="#ff0000"
                     className="bi bi-youtube me-5"
                     viewBox="0 0 16 16"

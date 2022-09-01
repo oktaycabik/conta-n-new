@@ -14,15 +14,15 @@
 }
 .category-list{
     cursor: pointer !important;
+    position: relative !important;
 }
 .product-img{
-    object-fit: cover; 
-    object-position: center !important;
+   
     cursor: pointer;
     transition: all .2s;
     max-height: 270px !important;
     width: 100%;
-  
+   
 }
 .border-bot{
     height: 1px;
@@ -49,3 +49,11 @@
     line-height: 1.6 !important;
     font-weight: 400 !important;
 }
+.badge-cat{
+    position: absolute !important;
+    top: 8px !important;
+    right: 12px !important;
+    background-color: #c50310cf;
+    color: #fff;
+    padding: 3px 12px;
+  }

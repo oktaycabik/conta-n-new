@@ -1,8 +1,7 @@
 .referenzen-title{
-  font-size: 20px !important;  
+  font-size: 32px !important;  
   font-weight: 600 !important;
-  margin-top: 16px;
-  margin-bottom: 16px;
+ 
   color: #181818 !important;
 }
 .referenzen-text{
@@ -16,4 +15,27 @@
     font-size: 14px !important;
     font-weight: 400;
     color: #181818 !important;
+}
+.splide__arrow svg {
+
+  fill: black !important;
+  height: 1.5em !important;
+  transition: fill .2s linear;
+  width: 1.5em !important;
+
+}
+.splide__arrow--prev svg {
+  transform: scaleX(-1);
+
+right: 30px !important;
+position: absolute !important;
+}
+.splide__arrow--next svg {
+  transform: scaleX(1);
+
+left: 30px !important;
+position: absolute !important;
+}
+.splide{
+  padding: 10px !important;
 }

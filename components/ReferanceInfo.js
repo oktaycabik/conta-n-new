@@ -1,26 +1,32 @@
 import React from "react";
-
+import Link from "next/link"
 const ReferanceInfo = () => {
   return (
     <section className="container">
       <div className="row mt-5 pr-5 pl-5 img-reverse mb-4">
-        <div className="col-lg-6 col-12 pt-4 ">
-          <h3 className="mb-4 mt-4">
-            <b>
-              Sie benötigen eine individuelle Lösung? Bei uns sind Sie richtig.
-            </b>
-          </h3>
-          <p>
-            Ob Einzelcontainer oder Mehrfachcontainer unsere preiswerten,
-            herkömmlich, errichteten Wohngebäude beinhalten vollständig alle
-            derzeitig gegebenen Anforderungen. Nach Wunsch können wir unsere
-            Experten eine visuelle Darstellung Ihrer Wunschcontainer erstellen.
-          </p>
-          <button className="button-dark mt-3">Zu den Referzen</button>
-        </div>
+      
 
         <div className="col-lg-6 col-12 ">
-          <img className="w-100" src="https://conliving.de/wp-content/themes/conliving-theme-2-2/assets/images/referenzen-view.png" />
+          <img className="w-100 shadow" src="/assets/img/referenzen-info.webp" />
+        </div>
+        <div className="col-lg-6 col-12 pt-4 ">
+          <h3 className="mb-4 mt-4">
+            <b>Preise für Bürocontainer</b>
+          </h3>
+          <p>
+            Container von Contain Haus wurden mit Spitzentechnologie entworfen
+            und haben ihre ideale Form mit statischen Berechnungen erhalten. Bei
+            der Herstellung von Containern stehen Langlebigkeit,
+            Materialqualität und Ästhetik im Vordergrund. Auch wenn Schall- und
+            Wärmedämmung, Langlebigkeit und Sicherheit im Vordergrund stehen,
+            sind Containerpreise im Vergleich zu anderen Bauweisen deutlich
+            preisgünstiger. Für den Ankauf von und gebrauchten können Sie sich
+            an unsere Kundenberater wenden.
+          </p>
+          <Link href="/referenzen">
+          <a className="button-dark mt-3 mb-3">Referenzen</a>
+          </Link>
+          
         </div>
       </div>
     </section>

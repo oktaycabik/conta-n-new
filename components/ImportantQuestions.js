@@ -4,7 +4,7 @@ const ImportantQuestions = () => {
   return (
     <section className="questions-container pt-5 pb-4">
       <div className="container">
-        <h1 className="ms-4">Häufig gestellte Fragen:</h1>
+
         {questions.map((question) => (
           <div key={question.id} className="row pe-5 ps-5 mt-4 mb-5">
             <div

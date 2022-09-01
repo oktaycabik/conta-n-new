@@ -7,39 +7,10 @@ const Banner = () => {
   return (
     <div className="hero-banner">
       <div className="container">
-        <div className="row ">
-          <div className="col-lg-5 col-12 hero-banner-content pt-5 ">
-            <h1 className="banner-title">Bürocontainer</h1>
-            <h2 className="banner-title2 text-color">Direkt ab Werk</h2>
-            <div className="banner-card mt-4">
-            
-              <p>
-              <strong>Contain Haus Container</strong>{" "} werden mit besonderer Spitzentechnologie hergestellt und sind
-                mit seiner statischen Berechnungen zur idealem und modernsten
-                Container-Baukonstruktion auf dem europäischen Markt geworden.
-              
-              </p>
-              <p className="text-color">
-                Bei der Herstellung von unseren Containern stehen Langlebigkeit,Materialqualität und Ästhetik im Vordergrund.
-                </p>{" "}
-                <p>
-                  <b>Sie können sich jede Zeit auch an unsere Kundenberater wenden, um unsere Bürocontainer zu kaufen oder zu mieten.</b>
-                </p>
-            </div>
-            <div className=" buttons-row mt-3">
-            <Link href="/burocontainer">
-              <a className="banner-btn">MEHR ERFAHREN</a>
-              </Link>
-              <Link href="/kontakt">
-              <a className="banner-btn2 ms-5">KONTAKT</a>
-              </Link>
-            </div>
-          </div>
-          <div className="col-1 ">
-            <div className="border-banner mx-auto"></div>
-          </div>
-          <div className="col-lg-6 ms-auto col-0 pt-5 test mt-5 ">
-            <div className="row">
+        <div className="row">
+       
+          <div className="col-lg-6  col-0 pt-5 test mt-5 ">
+            <div className="row justify-content-center">
               <div className="banner-info-card me-2 mt-2">
                 <span className="banner-card-text">Bürocontainer</span>
                 <span className="banner-card-desc">
@@ -123,6 +94,36 @@ const Banner = () => {
                   )}
                 </span>
               </div>
+            </div>
+          </div>
+          <div className="col-1 ">
+            <div className="border-banner mx-auto"></div>
+          </div>
+          <div className="col-lg-5 col-12 hero-banner-content pt-5 ">
+            <h1 className="banner-title">Bürocontainer</h1>
+            <h2 className="banner-title2 text-color">Direkt ab Werk</h2>
+            <div className="banner-card mt-4">
+            
+              <p>
+              <strong>Contain Haus Container</strong>{" "} werden mit besonderer Spitzentechnologie hergestellt und sind
+                mit seiner statischen Berechnungen zur idealem und modernsten
+                Container-Baukonstruktion auf dem europäischen Markt geworden.
+              
+              </p>
+              <p className="text-color">
+                Bei der Herstellung von unseren Containern stehen Langlebigkeit,Materialqualität und Ästhetik im Vordergrund.
+                </p>{" "}
+                <p>
+                  <b>Sie können sich jede Zeit auch an unsere Kundenberater wenden, um unsere Bürocontainer zu kaufen oder zu mieten.</b>
+                </p>
+            </div>
+            <div className=" buttons-row mt-3">
+            <Link href="/burocontainer">
+              <a className="banner-btn">MEHR ERFAHREN</a>
+              </Link>
+              <Link href="/kontakt">
+              <a className="banner-btn2 ms-5">KONTAKT</a>
+              </Link>
             </div>
           </div>
         </div>
