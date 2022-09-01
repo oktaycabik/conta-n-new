@@ -3,11 +3,11 @@
     "id": "1",
     "category": "burocontainer",
     "image": {
-      "ima1": "/assets/img/ShopDeutsch/SPECIALGLASS/masarawi/1.webp",
-      "ima2": "/assets/img/ShopDeutsch/SPECIALGLASS/masarawi/2.webp",
-      "ima3": "/assets/img/ShopDeutsch/SPECIALGLASS/masarawi/3.webp",
-      "ima4": "/assets/img/ShopDeutsch/SPECIALGLASS/masarawi/4.webp",
-      "ima5": "/assets/img/ShopDeutsch/SPECIALGLASS/masarawi/5.webp"
+      "ima1": "https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/13b74454-3361-45de-d440-8e2f54449e00/public",
+      "ima2": "https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/90ae7362-6ae5-41ac-d795-e8dd22685b00/public",
+      "ima3": "https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/2aa5219a-fd33-4f8f-3248-53f198cb2b00/public",
+      "ima4": "https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/ccd74123-fc43-4d8b-7a30-25b168af5900/public",
+      "ima5": "https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/32e3e79b-c432-4fdb-770b-de4fb189f700/public"
     },
     "title": "Black Panter",
     "slug": "black-panter",
