@@ -25,7 +25,7 @@ const AnlageInfo = () => {
         <div className="col-lg-6 col-12 ">
           <img
             className="w-100 shadow"
-            src="/assets/img/FrontPage/XLMainpageUpdate.webp"
+            src="https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/3f8d568a-657e-4683-fcff-f74faa05bd00/public"
           />
         </div>
       </div>

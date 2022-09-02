@@ -7,7 +7,7 @@ const ReferanceInfo = () => {
       
 
         <div className="col-lg-6 col-12 ">
-          <img className="w-100 shadow" src="/assets/img/referenzen-info.webp" />
+          <img className="w-100 shadow" src="https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/3086590a-97d7-49d5-099c-b9774e2f4b00/public" />
         </div>
         <div className="col-lg-6 col-12 pt-4 ">
           <h3 className="mb-4 mt-4">

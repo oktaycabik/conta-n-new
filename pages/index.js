@@ -22,18 +22,17 @@ import "@splidejs/react-splide/css/core";
 const index = () => {
   return (
     <>
-      <Splide 
-    
-      className="p-0"
-         options={ {
+      <Splide
+        className="p-0"
+        options={{
           rewind: true,
           speed: 1000,
-          autoplay:true,
-          arrows:false,
-          type:"loop",
-         
-        } }
-      aria-label="My Favorite Images">
+          autoplay: true,
+          arrows: false,
+          type: "loop",
+        }}
+        aria-label="My Favorite Images"
+      >
         <SplideSlide>
           <Banner />
         </SplideSlide>

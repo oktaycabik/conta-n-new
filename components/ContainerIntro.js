@@ -10,7 +10,7 @@ const ContainerIntro = () => {
               <Link href="/burocontainer">
                 <img
                   className="intro-img"
-                  src="/assets/img/ShopDeutsch/BLACKDIAMOND/2.webp"
+                  src="https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/04905a31-0dab-485e-b847-ed6fccd1ea00/public"
                   alt=""
                 />
               </Link>

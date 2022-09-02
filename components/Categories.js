@@ -10,7 +10,7 @@ const Categories = () => {
           <Link key={category.id} href={category.slug}>
             <div className="col-lg-4 col-md-6 col-12 mb-3 category-list border">
               <div className=" mt-2">
-                <img className="product-img" src={category.image} alt="" />
+                <img className="product-img" src={`https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/${category.image}/public`} alt="" />
                 <div className="badge-cat">gehe zur Kategorie</div>
                 <div className="card-body text-center">
                   <div className="category-title mt-2">{category.category}</div>
