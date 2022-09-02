@@ -55,11 +55,11 @@ const SmilarProducts = ({ product }) => {
                   <div className="col-12" key={product.id}>
                     <div className="card-img-top text-center ">
                       <Image
-                        width={280}
-                        height={230}
+                        width={290}
+                        height={240}
                         objectFit="cover"
                         className="d-block w-100"
-                        src={product.image.ima1}
+                        src={product.image.Shopkapak}
                         alt="First slide"
                         quality={100}
                       />

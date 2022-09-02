@@ -21,7 +21,7 @@ const Referenzen = () => {
       </div>
       <div className="row pl-5 pr-5 mt-3 mb-4">
         {referenzen.map((refe) => (
-          <div key={refe.id} className="col-lg-6 col-12">
+          <div key={refe.id} className="col-lg-4 col-md-6 col-12">
             <div className="border mb-3">
               <img className="w-100 shadow"  src={`https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/${refe.image.ima1}/public`} />
               <h3 className="referenzen-title mt-3 ms-3">{refe.title}</h3>

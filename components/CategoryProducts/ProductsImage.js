@@ -1,41 +1,14 @@
 import React from "react";
 
-import Image from 'next/image';
-
+import Image from "next/image";
 
 const ProductsImage = ({ pro }) => {
-
   return (
-    <div className="row pl-5 pr-5">
-      <div className="col-lg-4 col-12 p-1 mt-2 ">
-        <Image
-
-          width={400}
-          height={275}
-          objectFit="cover"
-          src={pro.image.ima5}
-          alt=""
-        />
+    <>
+      <div className="mt-3">
+        <img height={466} width={584} objectFit="cover"  className="w-100" src={pro.image.Product1} alt="" />
       </div>
-      <div className="col-lg-4 col-6 p-1 mt-2">
-        <Image
-          width={400}
-          height={275}
-          objectFit="cover"
-          src={pro.image.ima1}
-          alt=""
-        />
-      </div>
-      <div className="col-lg-4 col-6  p-1 mt-2">
-        <Image
-          objectFit="cover"
-          width={400}
-          height={275}
-          src={pro.image.ima2}
-          alt=""
-        />
-      </div>
-    </div>
+    </>
   );
 };
 

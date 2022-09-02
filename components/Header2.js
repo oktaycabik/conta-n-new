@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import HeaderCategories from "../components/HeaderCategories"
 const Header2 = () => {
   const router = useRouter();
   const [search, setSearch] = React.useState("");
@@ -76,12 +77,14 @@ const Header2 = () => {
       <div className="header-mid ">
         <div className="container pr-5 pl-5">
           <div className="mid-bar">
-            <img
-              className=""
-              height={112}
-              width={240}
-              src="/assets/img/contain-haus-logo.webp"
-            />
+            <Link href="/">
+              <img
+                className="cursor"
+                height={112}
+                width={240}
+                src="/assets/img/contain-haus-logo.webp"
+              />
+            </Link>
             <form className=" search-box" onSubmit={handleSubmit}>
               <svg
                 version="1.1"
@@ -182,7 +185,7 @@ const Header2 = () => {
           </div>
         </div>
       </div>
-      <div className="header-bot">
+      <div className="header-bot ">
         <div
           className="mobile-bot"
           type="button"
@@ -209,7 +212,7 @@ const Header2 = () => {
         </div>
         <div className="container ps-5 pe-5">
           <div className="bot-bar ">
-            <ul>
+            <ul className="">
               <li>
                 <Link href="/">
                   <a className="text-dark">
@@ -226,18 +229,21 @@ const Header2 = () => {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link href="/">
-                  <a className="text-dark">
-                    <img
-                      width={22}
-                      height={26}
-                      className="me-2"
-                      src="/assets/img/container.svg"
-                    />
-                    <span className="">Container</span>
-                  </a>
-                </Link>
+
+              <li className="dropdown">
+                <a className="text-dark">
+                  <img
+                    width={22}
+                    height={26}
+                    className="me-2"
+                    src="/assets/img/container.svg"
+                  />
+                  <span className="">Container</span>
+                </a>
+
+                <div className="dropdown-content">
+                <HeaderCategories/>
+                </div>
               </li>
               <li>
                 <Link href="/angebote">
@@ -299,7 +305,6 @@ const Header2 = () => {
                   </a>
                 </Link>
               </li>
-             
             </ul>
           </div>
         </div>

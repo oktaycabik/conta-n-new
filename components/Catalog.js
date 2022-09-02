@@ -4,7 +4,21 @@ const Catalog = () => {
   return (
     <section className="container">
       <div className="row pr-5 pl-5 mt-5 mb-5">
-        <div className="col-lg-9 col-12">
+      <div className="col-lg-4 col-8 m-auto mt-3 p-2  ">
+          <img
+         
+            className="w-100"
+            src="/assets/img/katalog.webp"
+          />
+          <div className="d-flex justify-content-center">
+            {" "}
+            <a href="https://www.containhaus.de/assets/img/KATALOG.pdf" target="blank" className="button-dark mt-2">Download Katalog</a>{" "}
+          </div>
+        </div>
+        <div className="col-lg-6 col-12 mt-3  ">
+          <div className="border p-3">
+
+        
           <span>
             Conliving Raumlösung - Container kaufen - Container mieten
           </span>
@@ -31,7 +45,8 @@ const Catalog = () => {
             Kauflösungen von der Conliving GmbH die ideale Lösung um schnell
             neuen Wohnraum zu schaffen.
           </p>
-          <div className="row mt-5">
+          </div>
+          <div className="row mt-3 border p-3">
             <div className="col-lg-3 col-6 mt-2">
               <div className="text-center cerifica"> EN 1090-1</div>
               <div className="text-center">LL-C (Certifaction)</div>
@@ -50,16 +65,7 @@ const Catalog = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-6 m-auto mt-3">
-          <img
-            className="w-100"
-            src="/assets/img/katalog.webp"
-          />
-          <div className="d-flex justify-content-center">
-            {" "}
-            <a href="https://www.containhaus.de/assets/img/KATALOG.pdf" target="blank" className="button-dark mt-2">Download Katalog</a>{" "}
-          </div>
-        </div>
+        
       </div>
     </section>
   );

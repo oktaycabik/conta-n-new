@@ -4,9 +4,10 @@ import React from "react";
 const ProductDetails = ({ pro }) => {
   return (
     <div>
-      <h2 className="mt-3 pe-4 ps-3 ms-2">{pro.title}</h2>
-      <div className="col-lg-12  ">
-        <div className="category-detail mt-3">
+   
+      <h2 className="mt-3 pe-4 ps-3   product-page-banner ">{pro.title}</h2>
+      <div className="">
+        <div className="category-detail ">
           <span className="mb-1">
             <b>Dieser Container steht bereit auf unserem Gelände zum Liefern</b>
           </span>

@@ -11,11 +11,32 @@ const Categories = ({ product }) => {
           <span className="text-light">{product[0]?.category}</span>
         </div>
       </div>
-  
+
       {product.map((pro) => (
-        <div className="mt-5" key={pro.id}>
-          <ProductsImage pro={pro} />
-          <ProductDetails pro={pro} />
+        <div className=" row product-page-section" key={pro.id}>
+          <div className="col-lg-6 col-12">
+            <ProductDetails pro={pro} />
+            <div className="row mt-3">
+              <div className="col-lg-6 col-12">
+                <img className="w-100 h-auto" src={pro.image.Thumb2} alt="" />
+              </div>
+
+              <div className="col-lg-6 col-6">
+                <img className="w-100 h-auto" src={pro.image.Thumb3} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 col-12">
+            <ProductsImage pro={pro} />
+            <div className="row mt-3">
+              <div className="col-lg-6 col-6">
+                <img className="w-100 h-auto" src={pro.image.Thumb4} alt="" />
+              </div>
+              <div className="col-lg-6 col-6">
+                <img className="w-100 h-auto" src={pro.image.Thumb5} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>

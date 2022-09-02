@@ -16,7 +16,7 @@ const product = products.filter((item) => {
       <div className="container pl-5 pr-5">
         <div className="row pl-5 pr-5 justify-content-center">
           <div className="pages-head mt-3  col-12">
-            <h1 className="text-light">{search}</h1>
+            <h1 className="text-light">Suchergebnisse:"{search}"</h1>
           </div>
         </div>
         <div className="row pl-5 pr-5 mt-3 mb-4">

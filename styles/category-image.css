@@ -32,7 +32,8 @@
 .category-detail{
     background-color: #f8f8f8;
     padding: 20px;
-   
+   height: 422px; 
+ 
 }
 .product-img:hover{
     opacity: 0.8;

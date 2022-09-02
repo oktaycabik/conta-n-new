@@ -10,6 +10,8 @@ import products from "../../data/products.json";
 import Image from "next/image";
 const Container = ({ product }) => {
   const [filter, setFilter] = useState(1);
+  const [selectPrice, setSelectPrice] = useState("standart")
+  console.log('selectPrice', selectPrice)
   return (
     <>
       <div className="container">
@@ -26,21 +28,26 @@ const Container = ({ product }) => {
                 <strong>Kaufpreis:</strong>{" "}
               </span>{" "}
               <span className="cutprice">{product.content.cutprice}</span>{" "}
-              <span className="price">{product.content.price} </span>
+              <span className="price">{selectPrice === "standart" ? product?.content?.price : product?.content?.FlatpackPrice } </span>
             </div>
             <div className="price-info mt-3">
               <span className="kaufpreis">
                 {" "}
                 <strong>Kaufpreis:</strong>{" "}
               </span>{" "}
-              <span className="price">{product?.content?.price} </span>
+              <span className="price">{selectPrice === "standart" ? product?.content?.price : product?.content?.FlatpackPrice } </span>
             </div>
 
             <div className="product-card-color col-12  mt-3">
               <span className="d-block pt-4 head">Container Ausführung</span>
-              <select className="mt-2 mb-2" name="cars" id="cars">
-                <option value="volvo">Standard</option>
-                <option value="saab">Flatpack</option>
+              <select onChange={(e)=>setSelectPrice(e.target.value)}  className="mt-2 mb-2" name="cars" id="cars">
+                <option  value="standart">Standard</option>
+                {
+                  product?.content.FlatpackPrice && (
+                    <option value="flatpack">Flatpack</option>
+                  )
+                }
+               
               </select>
               <div className="border mt-3 mb-3"></div>
               <div className="mt-2 mabe">Maße der Basis Ausstattung</div>
@@ -74,15 +81,15 @@ const Container = ({ product }) => {
               height="450"
           
               className="w-100 "
-              src={product?.image?.ima1}
+              src={product?.image?.Product1}
             />
             <div className="d-flex justify-content-between mt-2">
               <Image
-                width="168"
+                width="160"
                 height="135"
                 objectFit="cover"
                 className="w-100"
-                src={product?.image?.ima1}
+                src={product?.image?.Thumb1}
               ></Image>
 
               <Image
@@ -90,7 +97,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product?.image?.ima2}
+                src={product?.image?.Thumb2}
               ></Image>
 
               <Image
@@ -98,7 +105,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product?.image?.ima3}
+                src={product?.image?.Thumb3}
               ></Image>
 
               <Image
@@ -106,7 +113,7 @@ const Container = ({ product }) => {
                 height="105"
                 objectFit="cover"
                 className="w-100"
-                src={product?.image?.ima5}
+                src={product?.image?.Thumb4}
               ></Image>
             </div>
           </div>
