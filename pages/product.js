@@ -16,32 +16,36 @@ const product = products.filter((item) => {
       <div className="container pl-5 pr-5">
         <div className="row pl-5 pr-5 justify-content-center">
           <div className="pages-head mt-3  col-12">
-            <h1 className="text-light">Suchergebnisse:"{search}"</h1>
+            <h1 className="text-light">Suchergebnisse: {search}</h1>
           </div>
         </div>
-        <div className="row pl-5 pr-5 mt-3 mb-4">
-          <div className="col-lg-7 col-12 mb-3 p-0 ">
-            <img
-              className="w-100 product-img"
-              src="https://conliving.de/wp-content/uploads/2022/05/BC1-Standard-Hof-Aussen-4-web.jpg"
-              alt=""
-            />
-          </div>
-          <div className="col-lg-5 col-12 p-0 ">
-            <img
-              className="w-100 product-img"
-              src="https://conliving.de/wp-content/uploads/2022/05/BC1-Standard-Hof-Innen-2-web.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+       
         {product.map((pro) => (
-          <>
-            <div className="mt-5" key={pro.id}>
-              <ProductsImage pro={pro} />
-              <ProductDetails pro={pro} />
+        <div className=" row product-page-section" key={pro.id}>
+        <div className="col-lg-6 col-12">
+          <ProductDetails pro={pro} />
+          <div className="row mt-3">
+            <div className="col-lg-6 col-12">
+              <img className="w-100 h-auto" src={pro.image.Thumb2} alt="" />
             </div>
-          </>
+
+            <div className="col-lg-6 col-6">
+              <img className="w-100 h-auto" src={pro.image.Thumb3} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6 col-12">
+          <ProductsImage pro={pro} />
+          <div className="row mt-3">
+            <div className="col-lg-6 col-6">
+              <img className="w-100 h-auto" src={pro.image.Thumb4} alt="" />
+            </div>
+            <div className="col-lg-6 col-6">
+              <img className="w-100 h-auto" src={pro.image.Thumb5} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
         ))}
       </div>
     </div>

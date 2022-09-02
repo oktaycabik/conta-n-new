@@ -1,15 +1,8 @@
 import React from "react";
 import referenzen from "../data/referenzen.json";
-import Image from "next/image";
-const Referenzen = () => {
-  const cloudflareImagesLoader = ({ src, width }) => {
-    // Note that `width` might be larger than you're expecting because of a device pixel ratio (DPR)
 
-    // Next.js expects to see the width somewhere in the URL,
-    // so we add the no-op `width` query parameter to suppress the warning
-    // https://nextjs.org/docs/messages/next-image-missing-loader-width
-    return `https://imagedelivery.net/Hd6PfXQgWuxwOTKaoptnYw/${src}/public`;
-  };
+const Referenzen = () => {
+  
   return (
     <div className="container pl-5 pr-5">
       <div className="col-12">

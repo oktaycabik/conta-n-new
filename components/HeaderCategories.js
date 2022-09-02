@@ -6,7 +6,7 @@ const HeaderCategories = () => {
     <section className="container">
     <div className="row mt-3 ">
       {categories.map((category) => (
-        <Link key={category.id} href={category.slug}>
+        <Link key={category.id} href={`/${category.slug}`}>
           <div className="col-lg-3 col-md-6 col-12 mb-3 category-list ">
             <div className=" mt-2">
               <img className="product-img" src={`https://imagedelivery.net/PadbDhNfBOcxGIOgnEMBuA/${category.image}/public`} alt="" />
