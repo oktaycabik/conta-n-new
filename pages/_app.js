@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Script from "next/script"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/globals.css";
 import "../styles/header.css";
 import "../styles/blog.css";
@@ -25,10 +26,10 @@ function MyApp({ Component, pageProps }) {
         crossOrigin="anonymous"
       ></link>
        
-      <Script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossOrigin="anonymous"
+       <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"
       />
       <Layout> 
       <Component {...pageProps} />

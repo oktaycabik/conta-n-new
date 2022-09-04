@@ -7,11 +7,18 @@ import FilterInfo from "../../components/ProductPage/FilterInfo";
 import ProductFeatures from "../../components/ProductPage/ProductFeatures";
 import SmilarProducts from "../../components/SmilarProducts";
 import products from "../../data/products.json";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import Image from "next/image";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 const Container = ({ product }) => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [filter, setFilter] = useState(1);
   const [selectPrice, setSelectPrice] = useState("standart")
-  console.log('selectPrice', selectPrice)
+
   return (
     <>
       <div className="container">
@@ -76,46 +83,63 @@ const Container = ({ product }) => {
           </div>
 
           <div className="col-lg-7 col-12 ">
-            <img
-            
-              height="450"
-          
-              className="w-100 "
-              src={product?.image?.Product1}
-            />
-            <div className="d-flex justify-content-between mt-2">
-              <Image
-                width="160"
-                height="135"
-                objectFit="cover"
-                className="w-100"
-                src={product?.image?.Thumb1}
-              ></Image>
+          <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+        <SwiperSlide>
+          <img src={product.image.Product1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Product2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Product3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Product4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Product5} />
+        </SwiperSlide>
+   
 
-              <Image
-                width="168"
-                height="105"
-                objectFit="cover"
-                className="w-100"
-                src={product?.image?.Thumb2}
-              ></Image>
-
-              <Image
-                width="168"
-                height="105"
-                objectFit="cover"
-                className="w-100"
-                src={product?.image?.Thumb3}
-              ></Image>
-
-              <Image
-                width="168"
-                height="105"
-                objectFit="cover"
-                className="w-100"
-                src={product?.image?.Thumb4}
-              ></Image>
-            </div>
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper mt-2"
+      >
+        <SwiperSlide>
+          <img src={product.image.Thumb1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Thumb2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Thumb3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Thumb4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={product.image.Thumb5}/>
+        </SwiperSlide>
+    
+      </Swiper>
           </div>
         </div>
       </div>
